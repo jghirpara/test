@@ -11,6 +11,12 @@
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <center>
+                <table>
+                    <tr>
+
+
+                    </tr>
+                </table>
                 <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" ><%--OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged"--%>
                 </asp:DropDownList>
                 <div class="box-content" style="border: solid #EFF3FB; width: 1200px">
