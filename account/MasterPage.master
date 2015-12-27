@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Accont</title>
+    <!-- The styles -->
+    <link href="css/bootstrap-cerulean.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.js" type="text/javascript"></script>
+    <link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        $(function () {
+            $("#dvAccordian").accordion();
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <!-- topbar starts -->
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".top-nav.nav-collapse,.sidebar-nav.nav-collapse">
+                        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar">
+                        </span></a><a class="brand" href="Default.aspx">
+                            <img alt="Charisma Logo" src="img/logo20.png" />
+                            <span>Account</span></a>
+                    <!-- user dropdown ends -->
+                    <div class="top-nav nav-collapse">
+                        <ul class="nav">
+                            <%-- <li>
+                                <form class="navbar-search pull-left">
+                                <asp:LinkButton ID="LinkButton4" class="btn-group pull" PostBackUrl="~/edit_cmp.aspx"
+                                    runat="server">Company Master</asp:LinkButton>
+                                </form>
+                            </li>
+                            <li style="margin-left: 5px">
+                                <asp:LinkButton ID="LinkButton3" class="btn-group pull" PostBackUrl="~/company_master.aspx"
+                                    runat="server">Party Msate</asp:LinkButton>
+                            </li>
+                            <li style="margin-left: 5px">
+                                <asp:LinkButton ID="LinkButton5" class="btn-group pull" PostBackUrl="~/itemgrp.aspx"
+                                    runat="server">Item Group Msate</asp:LinkButton>
+                            </li>
+                            <li style="margin-left: 5px">
+                                <asp:LinkButton ID="LinkButton6" class="btn-group pull" PostBackUrl="~/item_msater.aspx"
+                                    runat="server">Item Master</asp:LinkButton>
+                            </li>
+                            <li style="margin-left: 5px">
+                                <asp:LinkButton ID="LinkButton1" class="btn-group pull" PostBackUrl="~/inv_genrate.aspx"
+                                    runat="server">Create Invoice</asp:LinkButton>
+                            </li>
+                            <li style="margin-left: 5px">
+                                <asp:LinkButton ID="LinkButton2" class="btn-group pull" PostBackUrl="~/inv_list.aspx"
+                                    runat="server">Invoice List</asp:LinkButton>
+                            </li>--%>
+                            <li>
+                                <div class="btn-group pull-right">
+                                    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><span class="hidden-phone">
+                                        Masters</span> <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="edit_cmp.aspx">Company Master</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="company_master.aspx">Party Msater</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="itemgrp.aspx">Item Group Msater</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="item_msater.aspx">Item Master</a></li>
+                                          <li class="divider"></li>
+                                         <li><a href="unit_master.aspx">Unit Master</a></li>
+                                          <li class="divider"></li>
+                                          <li><a href="transport.aspx">Add Transport</a></li>
+                                          <li class="divider"></li>
+                                         <li><a href="tarrif.aspx">Add Excise Commodity</a></li>
+                                         
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="btn-group pull-right">
+                                    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><span class="hidden-phone">
+                                        Transaction</span> <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="inv_genrate.aspx">Create Invoice</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="btn-group pull-right">
+                                    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><span class="hidden-phone">
+                                        Reports</span> <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="inv_list.aspx">Invoice List</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="dc_list.aspx">Dc List</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="company_list.aspx">Party List</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <hr>
+    </div>
+    </form>
+    <script src="js/bootstrap-dropdown.js"></script>
+</body>
+</html>
