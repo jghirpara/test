@@ -19,6 +19,10 @@
             <li><a href="#">Home</a> <span class="divider">/</span> </li>
             <li><a href="#">Customer</a> </li>
         </ul>
+        <table>
+        <tr></tr>
+        
+        </table>
     </div>
     <div id="dvAccordian" style="width: ">
         <h3 style="text-align:center">
