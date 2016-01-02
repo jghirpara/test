@@ -38,7 +38,7 @@
                                             Basic Detail</h3>
                                         <tr style="text-align: right;">
                                             <td style="font-weight: bold; width: 20%;">
-                                                Name
+                                                Name  test for an
                                             </td>
                                             <td style="width: 30%;">
                                                 <asp:TextBox ID="TextBox1" runat="server" Width="95%" OnTextChanged="TextBox1_TextChanged"
